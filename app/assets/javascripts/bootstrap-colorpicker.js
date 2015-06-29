@@ -138,7 +138,7 @@
 		this.component = this.element.is('.color') ? this.element.find('.add-on') : false;
 		
 		this.picker = $(CPGlobal.template)
-							.appendTo('body')
+							.appendTo('#place')
 							.on('mousedown', $.proxy(this.mousedown, this));
 		
 		if (this.isInput) {
